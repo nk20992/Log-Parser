@@ -1,0 +1,21 @@
+# Sample log file for log_parser.py
+# Format: TYPE | TIMESTAMP | LEVEL | MESSAGE | [fields...]
+
+network          | 10:01 | WARNING  | High traffic volume       | 192.168.1.10 | 8.8.8.8
+auth             | 10:02 | CRITICAL | Login failed              | admin        | 9
+system           | 10:03 | INFO     | Scheduled backup          | backup.py    | 0
+auth             | 10:05 | WARNING  | Unknown user login        | guest        | 2
+system           | 10:06 | CRITICAL | Process crash             | core.py      | 1
+critical_network | 10:08 | CRITICAL | Brute force internal IP   | 192.168.1.99 | 10.0.0.1 | root | 12
+network          | 11:01 | CRITICAL | DDoS detected             | 203.0.113.5  | 192.168.1.1
+auth             | 11:02 | CRITICAL | Root login attempt         | root         | 15
+system           | 11:03 | WARNING  | High memory usage         | monitor.py   | 0
+network          | 11:04 | INFO     | Regular HTTP request       | 10.0.0.12    | 172.16.0.1
+auth             | 11:05 | CRITICAL | Password spray detected    | administrator| 8
+system           | 11:06 | CRITICAL | Disk full error            | disk_mgr.py  | 2
+network          | 11:07 | WARNING  | Unusual outbound traffic   | 192.168.1.55 | 45.33.32.156
+critical_network | 11:08 | CRITICAL | Lateral movement detected  | 192.168.1.20 | 192.168.1.5 | sysadmin | 7
+system           | 11:09 | CRITICAL | Kernel panic               | kernel       | 139
+auth             | 11:10 | INFO     | Successful login           | nightpool    | 1
+network          | 11:11 | CRITICAL | Reverse shell attempt      | 192.168.1.77 | 10.0.0.99
+critical_network | 11:12 | CRITICAL | Credential stuffing attack | 192.168.1.88 | 10.0.0.1 | guest | 20
